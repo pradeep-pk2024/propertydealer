@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Property Dealer</title>
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/stylesheets/search.css">
+    <script src="/javascripts/project.js"></script>
+</head>
+<body>
+  <form  action="/property/edit_delete" method="get">
+<div class="root">
+    <div class="box">
+        <div class="boxdiv">
+
+            <div class="circle">
+                <img src="/images/house.png" class="logo">
+            </div>
+
+            <div class="circle">Search Property Item</div>
+
+
+            <div class="chek">
+                <a href="/property/display_all" style="cursor: pointer; text-decoration: none;">
+                <img src="/images/checklist.png" class="cheked">
+                </a>
+               </div>
+
+        </div>
+
+        <div class="container">         
+            <div class="row mt-2">
+                <div class="col-12">
+                    <div><b>Enter Property Id</b></div>
+                    <input required type="text" name="propertyid" class="form-control" placeholder="Enter owner name">
+                </div>
+
+                
+            <div class="row mt-4 mb-4">
+                <div class="col-6" style="display: flex;justify-content: center;">
+                    <button type="submit" class="btn btn-primary" style="width: 70%; font-size: 20px;border-radius: 10px;">Search</button>
+                </div>
+
+                <div class="col-6" style="display: flex;justify-content: center;"">
+                    <button type="reset" class="btn btn-info" style="width: 70%;font-size: 20px;border-radius: 10px;">Reset</button>
+                </div>
+            </div>
+
+            <div class="row mt-2">
+                <div class="col-12">
+                    <%=message %>
+                </div>
+            </div>        
+
+        </div>
+    </div>
+</div>
+</form>
+</body>
+</html>

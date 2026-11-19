@@ -1,0 +1,175 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.main{
+    width:100vw; 
+    height: 100vh; 
+    padding: 0px; 
+    margin: 0px; 
+    background: #b2bec3;
+}
+.container{
+    width: 100%;
+    height: 100%; 
+    display: flex; 
+    position: relative;
+}
+.box{
+    width: 35%;
+    height: 80vh; 
+    position: relative;
+}
+
+.image{
+    position: absolute; 
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    left: 40%;
+    top: 12%; 
+    z-index: 1;  
+    border: 4px solid black; 
+    border-right: none;
+    border-radius: 45px 0 0 45px;
+    z-index: 1;   
+    
+}
+
+.imagediv{
+    position: absolute; 
+    width: 35%; 
+    height: 80vh; 
+    background: #eb2f06; 
+    right: 16%;
+    top: 9.6%;  
+    border: 4px solid black; 
+    border-left: none;
+    border-radius: 0 45px 45px 0;
+    z-index: 1;
+}
+
+.back{
+    position: absolute; 
+    color: white; 
+    font-size: 20px; 
+    left: 50%; 
+    top: 96%; 
+    white-space: nowrap;
+    z-index: 2;
+}
+
+
+.login{
+    position: absolute; 
+    width: 450px; 
+    height: 400px;
+    background:white;
+    left:120%; 
+    top: 25%; 
+    border: 2px solid black;
+    border-radius: 40px;
+    display: 30px;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+h3{
+    text-align: center;
+    margin-bottom:20px;
+    color: #9c88ff;
+    font-weight: bold;
+}
+h6{
+    text-align: center;
+    margin-top: -18px;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.right-box{
+    width:70%;
+    
+}
+
+.right-box label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+    font-size:14px;
+    color:gray;
+}
+.input-box{
+    position: relative;
+}
+
+.right-box input{
+    width:110%;
+    padding:8px;
+    margin-left: 30px;
+    border:none;
+    border-bottom:1px solid gray;
+    outline:none;
+}
+.input-box i{
+    position: absolute;
+    right: -50px;
+    top: 17px;
+    color: gray;
+}
+
+.extra-links{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+    margin-bottom:20px;
+
+}
+
+.extra-links a{
+    text-decoration:none;
+    font-size:14px;
+    color: #eb2f06;
+    position: relative;
+    left: 15%;
+}
+
+.right-box button{
+    width:100%;
+    padding:2px;
+    display: block;
+    border:2px solid black;
+    background:#5f27cd;
+    color:white;
+    font-size:20px;
+    font-weight: bold;
+    border-radius:15px;
+    cursor:pointer;
+    position: relative;
+    left: 65%;
+    transform: translateX(-50%);
+    margin-top: 15%;
+}
+.text-center {
+    text-align: center;
+    margin-top:20px;
+    position: relative;
+    left: 20%;
+}
+
+.text-center span {
+    color: gray;
+    font-size: 13px;
+}
+
+.create-account{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+}

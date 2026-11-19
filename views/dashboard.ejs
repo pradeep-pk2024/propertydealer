@@ -1,0 +1,106 @@
+<html>
+    <head>
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+                <link rel='stylesheet' href='/stylesheets/dashboard.css' />
+    </head>
+    <div class="main">
+        <div class="black">
+            <div class=" text-image">
+                <img src="/images/logo-proparty.png">
+            </div>
+
+            <div class="use">
+                
+                <a href="/login/profile" style="color: white;">
+                    <i class="fas fa-user" style="cursor: pointer;"></i>
+                </a>
+                  <div class="use-name"><%=data.adminname %></div>
+
+                <a href="/login/logout" style="text-decoration: none; color: white; cursor: pointer;">
+                    <div class="log">
+                      <i class="fas fa-right-from-bracket logout-icon"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    
+    <div class="dashboard-body">
+        <div class="left-panel">
+            <div class="left-header">PROPERTY DEALER</div>
+           <div class="profile">
+                <div class="div-profile">
+                    <div class="div-image">
+                       <img src="/images/<%=data.picture %>" class="image">
+                       <div style="font-size: 12px; font-weight: bold;margin-top:-12px ;" >+91<%=data.mobileno %></div>
+                       <div style="font-size: 12px;margin-top: 5px;"><%=data.emailid %></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            
+            <div class="menu-section">
+                <a style="text-decoration: none;" href="/property/property_interface" target="mw">
+                    <div class="menu-box">
+                        <div class="Add-item">
+                            <img src='/images/Add-property.png' style="width: 20px;">
+                            <div style="margin-left: 4%; font-weight: bold;"> Add proparty</div>
+                        </div>
+                    </div>
+                    </a>
+
+                    <a style="text-decoration: none;" href="/property/display_all" target="mw">
+                       <div class="menu-box">
+                          <div class="Add-item">
+                              <img src='/images/check_list.png' style="width: 20px;">
+                               <div style="margin-left: 4%;font-weight: bold; ">proparty List</div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a style="text-decoration: none;" href="/property/search_propertyid" target="mw">
+                       <div class="menu-box">
+                          <div class="Add-item">
+                              <img src='/images/search.png' style="width: 20px;">
+                               <div style="margin-left: 4%; font-weight: bold;">Search</div>
+                            </div>
+                        </div>
+                    </a>
+                    
+
+                    <a style="text-decoration: none;" href="/property/search_propertyid" target="mw">
+                       <div class="menu-box">
+                          <div class="Add-item">
+                              <img src='/images/edit.png' style="width: 20px;">
+                               <div style="margin-left: 4%;font-weight: bold;"> Edit/Delete</div>
+                            </div>
+                        </div>
+                    </a>
+            
+                    
+                    <a style="text-decoration: none;" href="/login/logout">
+                       <div class="menu-box">
+                          <div class="Add-item">
+                              <img src='/images/log-out.png' style="width: 20px;">
+                               <div style="margin-left: 4%; font-weight: bold;">Logout</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+                <div class="right-panel">
+                   <iframe scrollbar="yes" name="mw"></iframe> 
+                
+                </div>
+
+        </div>
+    </div>       
+
+</html>

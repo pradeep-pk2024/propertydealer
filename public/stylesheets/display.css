@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+      overflow: auto;
+}
+
+.root {
+    width: max-content;
+    min-width: 100%;
+    min-height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url('../images/Dlflimited.jpeg');
+    background-size: cover;
+}
+
+.box {
+    width: 1400px;
+    height: auto;
+    background: #f5f5f5;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.boxdiv{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;  
+                width: auto; 
+                height: auto;
+                padding: 5px;
+                margin-top: -2px;
+                background:#f8a5c2;
+                border-radius: 10px;
+}       
+
+.circle {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #d1d1d1;
+    border-radius: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F8EFBA;
+}
+
+.chek{
+        margin: 5px;
+    }
+.cheked{
+         width: 65px
+    }
+
+.logo {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+.list{
+    font-size: 30px; 
+    font-weight: bold;
+}
+
+

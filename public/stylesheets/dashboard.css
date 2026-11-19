@@ -1,0 +1,162 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+.main{
+    width: 100vw; 
+    height: 100vh;
+    overflow: hidden;
+
+}
+.black{
+      margin: 0px;
+      padding: 0px;
+      width: 100%; 
+      height: 60px; 
+      background: black; 
+      display: flex;
+}
+
+.text-image{
+    position: relative;
+    margin-top: -34px;
+    
+}
+
+.text-image img{
+    width: 180px;
+    filter: brightness(0) invert(1);
+    margin-top: -25px;
+}
+.use{
+    position: absolute;
+    right: 10%;
+    top: 10px;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.use-name{
+    position: relative;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    top: 5px;
+}
+
+.log{
+    position: relative;
+    position: absolute;
+    right: -60px;
+    top: 0px;
+    color: white;
+    font-size: 25px;
+    display: flex;
+
+}
+
+.dashboard-body{
+    width:100%;
+    height:calc(100vh - 60px);
+    display:flex;
+    
+}
+.left-panel{
+    width:25%;
+    padding: 10;
+    background: #BDC581;
+    border: 2px black solid;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+
+
+}
+.left-header{
+    color:#e056fd;
+    font-size:24px;
+    font-weight:bold;
+    display:flex;
+    letter-spacing:2px;
+}
+
+.profile{
+    width: 100%; 
+    display: flex;
+}
+.div-profile{
+    width: 15%; 
+    display: flex; 
+    padding: 10px; 
+    margin-left: 7%;
+}
+.div-image{
+    display: flex; 
+    padding: 15px; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    position: relative;
+    top: -15px;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 60%;
+}
+.line{
+    position: relative;
+    width: 84%; 
+    height: 2px; 
+    background-color: gray; 
+    margin-left: 3%;
+    margin-top: -8px;
+}
+
+.menu-section{
+    padding: 20px;
+    position: relative;
+    top: -10px;
+
+}
+
+.menu-box{
+      cursor: pointer; 
+      display: flex;
+      background: #dfe6e9; 
+      width: 100%; 
+      justify-content: center;
+      align-items: center; 
+      padding: 15px;
+      margin-bottom: 10px; 
+      border-radius: 5px;
+      justify-content: center;
+      align-items: center;
+      margin-left: -6%;
+
+}
+.Add-item{
+    display: flex; 
+    width: 100%; 
+    justify-content: left; 
+    align-items: cente;
+    padding-left: 32px;
+}
+.right-panel{
+    width: 80%;
+    height:calc(100vh - 60px);
+    overflow: hidden;
+
+}
+
+.right-panel iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+

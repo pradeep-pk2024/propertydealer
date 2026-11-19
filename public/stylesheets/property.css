@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+    
+.root {
+    width: 100%;
+    min-height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/Dlflimited.jpeg');
+    background-size: cover;
+}
+
+.box {
+    width: 700px;
+    background:#82ccdd;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.boxdiv{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;  
+                width: 100%; 
+                height: auto;
+                padding-top: -10px;
+                margin-top: -2px;
+                background: #b8e994;
+                border-radius: 10px;
+}       
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #d1d1d1;
+    border-radius: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F8EFBA;
+}
+
+.chek{
+        margin: 5px;
+    }
+.cheked{
+         width: 60px
+    }
+
+.logo {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+
+.heading{
+    background-color: #a4b0be;
+    border: 1px solid red;
+    font-size: 25px;
+    padding: 0px;
+    color:white;
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+p{
+    margin-left: 90%;
+    animation-name: moving;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moving{
+    from{
+        margin-left: 100%;
+    }
+
+    to{
+        margin-left: -100%;
+    }
+}
+.form-control,
+.form-select {
+    height: 40px;
+    border-radius: 10px;
+}
+
+input[type="radio"] {
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
